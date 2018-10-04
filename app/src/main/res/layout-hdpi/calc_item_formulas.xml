@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            card_view:cardCornerRadius="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:columnCount="5"
+                    app:rowCount="6">
+
+                    <!-- Row 1-->
+                    <TextView
+                        android:id="@+id/btn_showMore"
+                        style="@style/calcNumber"
+                        android:text="..."
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_mod"
+                        style="@style/calcNumber"
+                        android:text="%"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_oneUpon"
+                        style="@style/calcNumber"
+                        android:text="1/x"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_factorial"
+                        style="@style/calcNumber"
+                        android:text="x!"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+
+                    <!-- Row 2-->
+                    <TextView
+                        android:id="@+id/btn_sin"
+                        style="@style/calcNumber"
+                        android:text="sin"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cos"
+                        style="@style/calcNumber"
+                        android:text="cos"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_tan"
+                        style="@style/calcNumber"
+                        android:text="tan"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cot"
+                        style="@style/calcNumber"
+                        android:text="cot"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 3-->
+                    <TextView
+                        android:id="@+id/btn_xSquare"
+                        style="@style/calcNumber"
+                        android:text="x"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_xPower"
+                        style="@style/calcNumber"
+                        android:text="x^"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_ePower"
+                        style="@style/calcNumber"
+                        android:text="e^"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_tenPower"
+                        style="@style/calcNumber"
+                        android:text="10^"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 4-->
+                    <TextView
+                        android:id="@+id/btn_squareRoot"
+                        style="@style/calcNumber"
+                        android:text="Root"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cubeRoot"
+                        style="@style/calcNumber"
+                        android:text="3 Root"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_log"
+                        style="@style/calcNumber"
+                        android:text="ln"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_logBaseTen"
+                        style="@style/calcNumber"
+                        android:layout_height="wrap_content"
+                        android:text="ln10"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 5-->
+                    <TextView
+                        android:id="@+id/btn_e"
+                        style="@style/calcNumber"
+                        android:gravity="center"
+                        android:text="e"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_pi"
+                        style="@style/calcNumber"
+                        android:text="&#960;"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:background="@color/colorWhite"
+                        android:enabled="true"
+                        android:text=""
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:background="@color/colorWhite"
+                        android:text=""
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+                <Button
+                    android:id="@+id/btn_equals"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/btn_green_bg"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="="
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40dp"
+                    app:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/more_formulas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="invisible"
+            card_view:cardCornerRadius="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:columnCount="5"
+                    app:rowCount="6">
+
+                    <!-- Row 1-->
+                    <TextView
+                        android:id="@+id/btn_showMore_m"
+                        style="@style/calcMoreFormula"
+                        android:text="X"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_mod_m"
+                        style="@style/calcMoreFormula"
+                        android:text="sinh"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_oneUpon_m"
+                        style="@style/calcMoreFormula"
+                        android:text="cosh"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_factorial_m"
+                        style="@style/calcMoreFormula"
+                        android:text="tanh"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1" />
+
+
+                    <!-- Row 2-->
+                    <TextView
+                        android:id="@+id/btn_sin_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/sin_inv"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cos_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/cos_inv"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_tan_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/tan_inv"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cot_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/cot_inv"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="2"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 3-->
+                    <TextView
+                        android:id="@+id/btn_xSquare_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/x_cube"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_xPower_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/x_inv"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_ePower_m"
+                        style="@style/calcMoreFormula"
+                        android:text="e^"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_tenPower_m"
+                        style="@style/calcMoreFormula"
+                        android:text="10^"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 4-->
+                    <TextView
+                        android:id="@+id/btn_squareRoot_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/exp"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_cubeRoot_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/mod"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_log_m"
+                        style="@style/calcMoreFormula"
+                        android:text="@string/summation"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_logBaseTen_m"
+                        style="@style/calcMoreFormula"
+                        android:layout_height="wrap_content"
+                        android:text="@string/log_base"
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="4"
+                        app:layout_rowWeight="1" />
+
+                    <!-- Row 5-->
+                    <TextView
+                        android:id="@+id/btn_e_m"
+                        style="@style/calcMoreFormula"
+                        android:gravity="center"
+                        android:text="d/dx"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/btn_pi_m"
+                        style="@style/calcMoreFormula"
+                        android:text="&#8747;"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:background="@color/colorFormulasBg"
+                        android:enabled="true"
+                        android:text=""
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:background="@color/colorFormulasBg"
+                        android:text=""
+                        app:layout_column="3"
+                        app:layout_columnWeight="1"
+                        app:layout_row="5"
+                        app:layout_rowWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+                <Button
+                    android:id="@+id/btn_equals_more"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/btn_green_bg"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="="
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40sp"
+                    app:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</layout>

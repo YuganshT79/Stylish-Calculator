@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <!-- Inverse Formulas -->
+    <string name="sin_inv">sin<sup><small>-1</small></sup></string>
+    <string name="cos_inv">cos<sup><small>-1</small></sup></string>
+    <string name="tan_inv">tan<sup><small>-1</small></sup></string>
+    <string name="cot_inv">cot<sup><small>-1</small></sup></string>
+    <string name="x_cube">x<sup><small>3</small></sup></string>
+    <string name="exp">Exp</string>
+    <string name="mod">Mod</string>
+    <string name="summation">&#8721;</string>
+    <string name="log_base">log<sub><small>x</small></sub></string>
+    <string name="x_inv">x<sup><small>-1</small></sup></string>
+</resources>
