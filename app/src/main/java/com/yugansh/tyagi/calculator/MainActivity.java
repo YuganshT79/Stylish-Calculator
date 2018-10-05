@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setPageTransformer(true, new CardTransformer());
     }
 
-    private void evaluate() {
+    private void evaluate() throws Exception {
         Expression expression = new ExpressionBuilder(textToFormat).build();
         try {
             double result = expression.evaluate();
@@ -294,7 +294,11 @@ public class MainActivity extends AppCompatActivity {
                             })
                             .setInterpolator(new AccelerateDecelerateInterpolator());
                     //endregion
-                    evaluate();
+                    try {
+                        evaluate();
+                    } catch (Exception e) {
+                        Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    }
                     break;
             }
         }
